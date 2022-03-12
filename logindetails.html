@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Ecommerce Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload = "takevalue()">
+
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.png" class="logo">
+        </a>
+        
+        <div>
+            <ul id="navbar">
+                <h2 class="title" >THE HULK FITNESS</h2>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active"  href="shop.html">Sale</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="contact.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <a href="#" id="close"><i class="far fa-times"></i></a> -->
+            </ul>
+        </div>
+        
+        <!-- <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+            <a href="contact.html"><i class="far fa-shopping-bag"></i></a>
+        </div> -->
+        </section>
+
+<!-- <section id="hulk">
+<div class="textProducts">
+    <h2>SALE! SALE! SALE!</h2>
+    <h1>On All Products</h1>
+    <p>Save more with coupons upto 40%</p>
+    <button>Shop Now</button>
+</div>
+<div class="ImageHulk">
+    <a href="#">
+        <img src="img/hulk.png" class="hulkImage">
+    </a>
+</div>
+</section > -->
+
+<div class="topic">
+<h2>For Payment Login First</h2>
+</div>
+
+<div class="container">
+    <div class="forms">
+
+        <!-- Registration Form -->
+        <div class="form signup">
+            
+            <span class="title">Registration</span>
+
+            <form action="#">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your name" required>
+                    
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your email" required>
+                    
+                </div>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Create a password" required>
+                   
+                </div>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Confirm a password" required>
+        
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="sigCheck">
+                        <label for="sigCheck" class="text">Remember me</label>
+                    </div>
+                    
+                    <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <div class="input-field button">
+                    <input type="button" value="Login Now">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="Item-purchased">
+<h1>You Have <span id="myText"></span></span> Items in Your Cart</h1>
+</div>
+
+
+
+
+<section id="newsletter" class="section-m1">
+<div class="newstext">
+    <h4>Sigup for News Letter</h4>
+    <p>Get email updates about our <span>special offers.</span></p>
+</div>
+<div class="form">
+<input type="text" placeholder="Your email address">
+<button class="normal" id="jq">Sign up</button>
+</div>
+</section>
+
+<div>
+    <img class="Hlogo" src="/img/logo.png">
+</div>
+
+<footer class="section-p1">
+<div class="col">
+
+<h4>Contact</h4>
+<p><strong>Address: </strong>Anguier Street Dublin 1</p>
+<p><strong>Phone No: </strong>+353 899469144</p>
+<p><strong>Time: </strong>10.00am - 06.00pm</p>
+
+<div class="follow">
+    <h4>Follow Us</h4>
+    <div class="icon">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-pinterest-p"></i>
+    <i class="fab fa-youtube"></i>
+</div>
+</div>
+</div>
+
+<div class="col">
+   <h4>About</h4>
+   <a href="#">About us</a>
+   <a href="#">Delivery Information</a>
+   <a href="#">Privacy Policy</a>
+   <a href="#">Terms & Conditions</a>
+   <a href="#">Contact us</a>
+</div>
+
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wislist</a>
+    <a href="#">Track my Order</a>
+    <a href="#">Help</a>
+</div>
+
+ <div class="col_install">
+    <h4>Install App</h4>
+    <p>From App Store</p>
+    <div class="row">
+        <img src="/img/App Store/Apple.png"> 
+        <img src="/img/App Store/Google Play.png">
+        <p>Payment Gateways</p>
+        <img  class="gateway" src="/img/App Store/Pay.png">
+    </div>
+ </div>
+</footer>
+
+<div class="copyright">
+    <p>© HTML CSS JAVASCRIPT JQUERY</p>
+</div>
+
+<script>
+    document.getElementById("myText").innerHTML=localStorage.getItem("textvalue");
+    // document.getElementById("myItem").innerHTML=localStorage.getItem("Item");
+</script>
+
+<script>
+    $("#jq").click(function(){
+          swal("Opps", "You Have to login first", "error");
+      });
+   </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

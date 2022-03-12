@@ -7,11 +7,21 @@
     <title>GYM Ecommerce Website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="style.css">
-
     
+    <script>
+        function takevalue(){
+        var value1 = document.getElementById("quantity").value;
+        localStorage.setItem("textvalue", value1);
+        // var outerDiv = document.getElementById("single-pro-details").value;
+        // var h2s = outerDiv.getElementsByTagName("h2");
+        // localStorage.setItem("Item", h2s);
+        return false;
+
+        
+    }
+    </script>
 </head>
 
 <body>
@@ -24,8 +34,8 @@
         <div>
             <ul id="navbar">
                 <h2 class="title" >THE HULK FITNESS</h2>
-                <li><a class="active"  href="index.html">Home</a></li>
-                <li><a  href="shop.html">Sale</a></li>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active"  href="shop.html">Sale</a></li>
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="contact.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -53,91 +63,54 @@
 </div>
 </section > -->
 
-<section id="hulk">
-    <h2>SALE! SALE! SALE!</h2>
-    <h1>On All Products</h1>
-    <p>Save more with coupons upto 40%</p>
-    <button onclick="window.location.href='shop.html';">Shop Now</button>
-</section>
-
-<section id="feature" class="section-p1">
-    <div class="feat-box">
-       <img src="/img/Features/freeShipping.png">
-       <h3>Free Shipping</h3>
+<section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="img/Products/PETL13719-Gallery-E-New_800x.jpg" width="100%" id="MainImg">
+    <div class="small-img-group">
+        <div class="small-img-col">
+        <img src="/img/Products/Product 3/1.webp" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+            <img src="/img/Products/Product 3/2.webp" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+                <img src="/img/Products/Product 3/3.webp" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="/img/Products/Product 3/4.webp" width="100%" class="small-img">
+                    </div>
     </div>
-    <div class="feat-box">
-        <img src="/img/Features/ORDERONLINE.png">
-        <h3>Online Order</h3>
-     </div>
-     <div class="feat-box">
-        <img src="/img/Features/Save.png">
-        <h3>Save Money</h3>
-     </div>
-     <div class="feat-box">
-        <img src="/img/Features/Promo.png">
-        <h3>Promotions</h3>
-     </div>
-     <div class="feat-box">
-        <img src="/img/Features/ggg.jpg">
-        <h3>Brands</h3>
-     </div>
 
+    </div>
+
+    <div class="single-pro-details">
+        <form action="logindetails.html">
+    <h2>Trade Mill</h2>
+    <h4>Proform Power 995i Treadmill</h4>
+    <h6>€2250</h6>
+        
+        <input type="number" id="quantity" value="1">
+        <button class="normal" onclick="takevalue();">Add to Cart</button>
+        </form>
+        <h4>Product Details</h4>
+        <span>
+            <ul class="bullet">
+        <li><span id="FirstLine"></span></li>
+        <li><span id="SecondLine"></span></li>
+        <li><span id="ThirdLine"></span></li>
+        <li><span id="FourthLine"></span></li>
+    </ul>
+        </span>
+    </div>
 </section>
+
+
 
 <section id="product1" class="section-p1">
     <h2>Featured Products</h2>
     <p>New Arriavls</p>
     <div class="pro-conatiner">
-        <div class="pro" onclick="window.location.href='singleproduct1.html';">
-            <img src="/img/Products/TradeMill.png">
-            <div class="description">
-            <span>Body Language</span>
-            <h5>Carbon Trade mill</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>€999</h4>
-        </div>
-        <a href="#"><i  class="fal fa-shopping-cart  cart "></i></a>
-    </div>
-
-    <div class="pro" onclick="window.location.href='singleproduct2.html';">
-        <img src="/img/Products/HitFitnessAirRunnerCurvedTreadmill1_800x.jpg">
-        <div class="description">
-        <span>Body Language</span>
-        <h5>HitFitness AirRunner Curved Treadmill</h5>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h4>€2229</h4>
-    </div>
-    <a href="#"><i class="fal fa-shopping-cart  cart "></i></a>
-</div>
-
-<div class="pro" onclick="window.location.href='singleproduct3.html';">
-    <img src="/img/Products/PETL13719-Gallery-E-New_800x.jpg">
-    <div class="description">
-    <span>Body Language</span>
-    <h5>Proform Power 995i Treadmill</h5>
-    <div class="star">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-    </div>
-    <h4>€2250</h4>
-</div>
-<a href="#"><i class="fal fa-shopping-cart  cart "></i></a>
-</div>
+    
 
 <div class="pro" onclick="window.location.href='singleproduct4.html';">
     <img src="/img/Products/Hit-Fitness-Pegasus-Multi-Gym--Olympus-Range-01_800x.jpg">
@@ -190,43 +163,6 @@
 <a href="#"><i class="fal fa-shopping-cart  cart "></i></a>
 </div>
 </div>
-</section>
-
-<section id="banner" class="section-m1">
-    <h4>Repair Service</h4>
-    <h2>Servicing <span>FREE!</span> for One year on Gym Equipemnts</h2>
-    <button class="normal">Explore More</button>
-</section>
-
-<section id="sm-banner" class="section-p1">
-    <div class="banner-box">
-        <h4>Crazy Deals</h4>
-        <h2>buy 1 get 1 free on Gainer</h2>
-        <span>The Best deal to get</span>
-        <button class="white">Learn more</button>
-    </div>
-
-    <div class="banner-box banner-box2">
-        <h4>Crazy Deals</h4>
-        <h2>buy 1 get 1 free on Whey </h2>
-        <span>The Best deal to get</span>
-        <button class="white">Learn more</button>
-    </div>
-</section>
-
-<section id="banner3">
-    <div class="banner-box">
-        <h2>Season Sale</h2>
-        <h3>Winter sale upto 30% OFF</h3>
-    </div>
-    <div class="banner-box banner-box2">
-        <h2>outfits</h2>
-        <h3>Winter sale upto 43% OFF</h3>
-    </div>
-    <div class="banner-box banner-box3">
-        <h2>After workout Deo</h2>
-        <h3>Winter sale upto 20% OFF</h3>
-    </div>
 </section>
 
 <section id="newsletter" class="section-m1">
@@ -294,18 +230,72 @@
  </div>
 </footer>
 
+<!-- <script>
+    var MainImg = document.getElementById("MainImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function(){
+        MainImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function(){
+        MainImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function(){
+        MainImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function(){
+        MainImg.src = smallImg[3].src;
+    }
+    
+</script> -->
+
+<!-- <script>
+    function takevalue(){
+    var value1 = document.getElementById("quantity").value;
+    document.getElementById("myText").innerHTML = value1;
+    window.location.href='logindetails.html';
+}
+</script> -->
+
+<script>
+    // fetch('./data.json')
+    // .then(function(response){
+    //     return response.json();
+    // })
+    // .then(function(data){
+    //     console.log(data);
+    //     // for(i=0; i<data.length; i++){
+    //         document.getElementById("oneline").innerHTML += `<h3>${data[0].FirstLine}</h3>`
+    //         document.getElementById("oneline").innerHTML += `<h3>${data[0].SecondLine}</h3>`
+
+    //     // }
+    // })
+
+    fetch('./data.json')
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data);
+    // for(i=0; i<data.length; i++){
+        document.getElementById("FirstLine").innerHTML += `${data[2].FirstLine}`
+        document.getElementById("SecondLine").innerHTML += `${data[2].SecondLine}`
+        document.getElementById("ThirdLine").innerHTML += `${data[2].ThirdLine}`
+        document.getElementById("FourthLine").innerHTML += `${data[2].FourthLine}`
+    // }
+})
+</script>
+
+<script>
+    $("#jq").click(function(){
+          swal("Opps", "You Have to login first", "error");
+      });
+   </script>
+
 <div class="copyright">
     <p>© HTML CSS JAVASCRIPT JQUERY</p>
 </div>
 
-<script>
- $("#jq").click(function(){
-       swal("Opps", "You Have to login first", "error");
-   });
-</script>
-
     <script src="script.js"></script>
 </body>
-
-
 </html>
