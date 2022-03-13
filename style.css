@@ -581,12 +581,7 @@ footer a:hover {
     color: rgb(160, 55, 55);
 }
 
-.flex{
-    display: flex;
-    gap: var(--gap, 0.5rem);
-}
 
-<<<<<<< HEAD
 /* SHOP CSS */
 
 #page-header{
@@ -672,53 +667,6 @@ footer a:hover {
 
 ul.bullet {
     list-style-type: circle;
-=======
-@media all and (max-width:768px){
-.logo{
-    margin-left: -80px;
-    height: 165px;
-    width: 130px;
-        /* align-items: flex-start;
-        justify-content: flex-start; */
-    }
-
-    .title{
-        margin-right: 60px;
-    }
-    .navbarclass{
-        height: 140px;
-    }
-
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        right: 0px;
-        width: 100vh;
-        height: 300px;
-    }
-
-    #navbar h2 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-        padding-left: 0px;
-        /* margin-top: 15px; */
-        
-    }
-
-    #hulk h2 {
-        padding-bottom: 1000px;
-        margin-left: -70px;
-        font-size: 35px;
-    }
-
->>>>>>> fc5d727d27777bfb3bc83e6ccb4fbf9bd190cb3e
 }
 
 
@@ -1159,7 +1107,7 @@ ul.bullet {
        
     }
 
-    #navbar a{
+    #navbar{
         text-decoration: none ;
     }
 
