@@ -1,49 +1,94 @@
 [
-    {
-        "FirstLine": "Powerful motor provides a smooth quiet ride",
-        "SecondLine": "Easy to store when not in use",
-        "ThirdLine": "Intuitive controls allow adjustments as needed",
-        "FourthLine": "Toggle switch"
+    { 
+        "h2": "Trade Mill",
+        "h4": "Carbon Trade mill",
+        "h6": "€999",
+        "ProductDetails": "Product Details",
+        "specs": [
+        "Powerful motor provides a smooth quiet ride",
+        "Easy to store when not in use",
+        "Intuitive controls allow adjustments as needed",
+        "Toggle switch"
+        ]
         
     },
 
-    {
-        "FirstLine": "Burn more calories",
-        "SecondLine": "Better for the environment",
-        "ThirdLine": "Get fit at home",
-        "FourthLine": "Commercial durability 150,000-mile belt life"
+    { 
+        "h2": "Trade Mill",
+        "h4": "Carbon Trade mill",
+        "h6": "€999",
+        "ProductDetails": "Product Details",
+        "specs": [
+        "Burn more calories",
+        "Better for the environment",
+        "Get fit at home",
+        "Commercial durability 150,000-mile belt life"
+        ]
         
     },
 
-    {
-        "FirstLine": "6 High Contrast Multi-Color Display",
-        "SecondLine": "Lifetime frame, 5 yr motor, 2 yr parts and labour.",
-        "ThirdLine": "EKG Grip Pulse",
-        "FourthLine": "Treadmill can be folded up"
+    
+
+    { 
+        "h2": "Trade Mill",
+        "h4": "Carbon Trade mill",
+        "h6": "€999",
+        "ProductDetails": "Product Details",
+        "specs": [
+        "6 High Contrast Multi-Color Display",
+        "Lifetime frame, 5 yr motor, 2 yr parts and labour.",
+        "EKG Grip Pulse",
+        "Treadmill can be folded up"
+        ]
         
     },
 
-    {
-        "FirstLine": "180kg load weight",
-        "SecondLine": "Full-body workout",
-        "ThirdLine": "Range of attachments",
-        "FourthLine": "1 year warranty"
+
+    { 
+        "h2": "Trade Mill",
+        "h4": "Carbon Trade mill",
+        "h6": "€999",
+        "ProductDetails": "Product Details",
+        "specs": [
+        "180kg load weight",
+        "Full-body workout",
+        "Range of attachments",
+        "1 year warranty"
+        ]
         
     },
 
-    {
-        "FirstLine": "15 Different Attachments",
-        "SecondLine": "180kg Load Weight",
-        "ThirdLine": "All Your Equipment In One Place",
-        "FourthLine": "Carton Dimensions: 2200 x 610 x 510 mm"
+    
+
+    { 
+        "h2": "Trade Mill",
+        "h4": "Carbon Trade mill",
+        "h6": "€999",
+        "ProductDetails": "Product Details",
+        "specs": [
+        "15 Different Attachments",
+        "180kg Load Weight",
+        "All Your Equipment In One Place",
+        "Carton Dimensions: 2200 x 610 x 510 mm"
+        ]
         
     },
 
-    {
-        "FirstLine": "Replaces 12 dumbbells",
-        "SecondLine": "The maximum weight is 40kg",
-        "ThirdLine": "The smallest weight is 5kg",
-        "FourthLine": "High-quality storage tray"
+    
+
+    { 
+        "h2": "Trade Mill",
+        "h4": "Carbon Trade mill",
+        "h6": "€999",
+        "ProductDetails": "Product Details",
+        "specs": [
+        "Replaces 12 dumbbells",
+        "The maximum weight is 40kg",
+        "The smallest weight is 5kg",
+        "High-quality storage tray"
+        ]
         
     }
+
+    
 ]

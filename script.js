@@ -3,17 +3,17 @@
 // const nav = document.getElementById('navbar');
 
 
-if(bar){
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
+// if(bar){
+//     bar.addEventListener('click', () => {
+//         nav.classList.add('active');
+//     })
+// }
 
-if(close){
-    bar.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
+// if(close){
+//     bar.addEventListener('click', () => {
+//         nav.classList.remove('active');
+//     })
+// }
 
 
 
@@ -59,3 +59,29 @@ if(close){
 // })
 
 
+let http = new XMLHttpRequest();
+
+http.open('get', 'data.json', true);
+
+http.send();
+
+http.onload = function(){
+
+    if(this.readyState == 4 && this.status == 200){
+
+        let details = JSON.parse(this.responseText);
+
+        let output = "";
+
+        for(let item of details){
+            output += `
+            <div class= "details">
+            <img src="" >
+            <h2>${item.h2}</h2>
+            </div>
+            `;
+        }
+
+        document.querySelector(".details").innerHTML = output;
+    }
+}
